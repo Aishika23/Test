@@ -1,3 +1,13 @@
+/* Existing styles */
+
+/* Media query for smaller screens */
+/* Media query for smaller screens */
+
+
+
+
+
+
 h4,h1,body {
     padding: 0;
     margin: 0;
@@ -202,101 +212,50 @@ h4,h1,body {
 /* Your existing CSS */
 
 /* Media query for smaller screens */
+
 @media only screen and (max-width: 768px) {
-    body {
-      font-size: 14px;
-    }
-  
-    .menubar {
-      position: static;
-      background-color: white;
-    }
-  
-    .container {
-      padding: 5px;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .heading {
-      margin-right: 0;
-      font-size: 24px;
-    }
-  
-    .items {
-      margin-left: 0;
-      margin-top: 5px;
-      font-size: 16px;
-    }
-  
     .display {
-      height: 50%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
     }
-  
-    .head {
-      font-size: 40px;
-      padding: 20px;
-    }
-  
-    .btn {
-      width: 20%;
-      height: 40px;
-      font-size: 14px;
-    }
-  
-    .sections {
-      flex-direction: column;
-      padding: 10px;
-    }
-  
-    .w {
-      padding: 20px;
-      font-size: 18px;
-    }
-  
-    .u {
-      font-size: 24px;
-      border-bottom: 2px solid rgb(165, 148, 21);
-    }
-  
-    .content {
-      padding: 10px;
-      flex-direction: column;
-    }
-  
-    .desc {
-      width: 100%;
-      font-size: 14px;
-    }
-  
-    .hoover {
-      transition: none;
-    }
-  
-    .hoover:hover {
-      transform: none;
-    }
-  
+
     .ending {
-      height: auto;
-      flex-direction: column;
+        height: auto;
+        padding: 20px;
     }
-  
-    .terms {
-      margin-left: 0;
+
+    .sections {
+        flex-direction: column;
+        align-items: center;
     }
-  
-    #e {
-      font-size: 24px;
+
+    .sections .content {
+        width: 90%;
+        text-align: center;
+        margin: 10px auto;
     }
-  
-    .d {
-      font-size: 12px;
+
+    .sections img {
+        width: 80%;
+        height: auto;
     }
-  
-    .d a {
-      font-size: 12px;
+
+    .menubar,
+    .ending {
+        width: 100%;
+        padding: 10px;
     }
-  }
+
+    .items {
+        margin: 10px 0;
+        display: block;
+        text-align: center;
+    }
+}
   
-  
+/* Existing styles */
+
+/* Media query for smaller screens */
+
+    
