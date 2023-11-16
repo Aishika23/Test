@@ -1,6 +1,7 @@
 h4,h1,body {
     padding: 0;
     margin: 0;
+    
 }
 
 
@@ -68,6 +69,7 @@ h4,h1,body {
     /* Apply grayscale filter to the background */
     filter: grayscale(90%);
     animation: changeBackground 12s infinite ease-in-out; /* Animation for changing background */
+    
 }
 
 /* Define keyframes for background image change */
@@ -195,3 +197,106 @@ h4,h1,body {
     color: white;
     text-decoration: none;
 }
+
+
+/* Your existing CSS */
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .menubar {
+      position: static;
+      background-color: white;
+    }
+  
+    .container {
+      padding: 5px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .heading {
+      margin-right: 0;
+      font-size: 24px;
+    }
+  
+    .items {
+      margin-left: 0;
+      margin-top: 5px;
+      font-size: 16px;
+    }
+  
+    .display {
+      height: 50%;
+    }
+  
+    .head {
+      font-size: 40px;
+      padding: 20px;
+    }
+  
+    .btn {
+      width: 20%;
+      height: 40px;
+      font-size: 14px;
+    }
+  
+    .sections {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .w {
+      padding: 20px;
+      font-size: 18px;
+    }
+  
+    .u {
+      font-size: 24px;
+      border-bottom: 2px solid rgb(165, 148, 21);
+    }
+  
+    .content {
+      padding: 10px;
+      flex-direction: column;
+    }
+  
+    .desc {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .hoover {
+      transition: none;
+    }
+  
+    .hoover:hover {
+      transform: none;
+    }
+  
+    .ending {
+      height: auto;
+      flex-direction: column;
+    }
+  
+    .terms {
+      margin-left: 0;
+    }
+  
+    #e {
+      font-size: 24px;
+    }
+  
+    .d {
+      font-size: 12px;
+    }
+  
+    .d a {
+      font-size: 12px;
+    }
+  }
+  
+  
