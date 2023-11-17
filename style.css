@@ -207,6 +207,10 @@ h4,h1,body {
     color: white;
     text-decoration: none;
 }
+.toggle-menu
+{
+    visibility: hidden;
+}
 
 
 /* Your existing CSS */
@@ -214,10 +218,15 @@ h4,h1,body {
 /* Media query for smaller screens */
 
 @media only screen and (max-width: 768px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
     .display {
         height: auto;
         padding: 20px;
         text-align: center;
+        flex-direction: column;
     }
 
     .ending {
@@ -234,6 +243,7 @@ h4,h1,body {
         width: 90%;
         text-align: center;
         margin: 10px auto;
+        overflow: hidden;
     }
 
     .sections img {
@@ -244,18 +254,63 @@ h4,h1,body {
     .menubar,
     .ending {
         width: 100%;
-        padding: 10px;
     }
 
     .items {
+        overflow: hidden;
         margin: 10px 0;
         display: block;
         text-align: center;
+        white-space: nowrap;
+        overflow-x: auto;
     }
-}
-  
-/* Existing styles */
 
-/* Media query for smaller screens */
+    .head {
+        font-size: 25px;
+        padding: 50px;
+    }
+
+    .btn {
+        width: 40%;
+    }
+    .toggle-menu
+    {
+        visibility: visible;
+    }
+    .togg-item
+    {
+        height: 100%;
+        display: none;
+        position: absolute;
+        top: 100%;
+        z-index: 1; /* Position it below the menubar */
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+
+    }
+
+    /* Adjustments for collapsible menu */
+    .menubar .items {
+        display: none;
+    }
+
+    .menubar .toggle-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menubar.toggled .toggle-menu {
+        display: none;
+    }
+
+    .menubar.toggled .togg-item{
+        display: block;
+    }
+
+    
+}
 
     
