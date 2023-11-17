@@ -117,7 +117,7 @@ h4,h1,body {
     padding: 30px;
     
 }
-.btn
+.btni
 {
     background-color: white;
     width: 10%;
@@ -270,7 +270,7 @@ h4,h1,body {
         padding: 50px;
     }
 
-    .btn {
+    .btni {
         width: 60%;
     }
     .toggle-menu
@@ -280,7 +280,7 @@ h4,h1,body {
     .togg-item
     {
         height: 100%;
-        display: none;
+       
         position: absolute;
         top: 100%;
         z-index: 1; /* Position it below the menubar */
