@@ -280,7 +280,7 @@ h4,h1,body {
     .togg-item
     {
         height: 100%;
-       
+        display: none;
         position: absolute;
         top: 100%;
         z-index: 1; /* Position it below the menubar */
@@ -309,7 +309,12 @@ h4,h1,body {
     .menubar.toggled .togg-item{
         display: block;
     }
-
+ 
+    
+    .visible {
+        display: flex;
+        /* Other styling */
+    }
     
 }
 
